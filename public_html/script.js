@@ -5,7 +5,7 @@
  */
 
 $("document").ready(function(){
-    $(".lbj").css("background-color", "yellow");
+    $(".lbj").css("background-color", "gold");
     
 });
 
