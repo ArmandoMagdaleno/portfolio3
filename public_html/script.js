@@ -12,6 +12,13 @@ $("document").ready(function() {
     $("p:gt(2)").css({"background-color": "white", "color": "maroon"});
     $("h1").bind("mouseover", mouseOverMe).bind("mouseout", mouseOutMe);
     $("h1").bind("click", mouseClick);
+    
+    
+    $("#replaceWText").bind("click", replaceWText);
+    
+    $("#randPara").bind("click", addAPara);
+
+    $("#removePara").bind("click", removeAPara);
 
 });
 
@@ -25,5 +32,20 @@ function mouseOutMe() {
 
 function mouseClick() {
     $("h1").html("CLUTCH");
+}
+
+
+////1) Add, 2) Remove, and 3) Change HTML Elements using JQuery////
+
+function removeAPara(){
+    $("#randPara p:last").remove();
+}
+
+function addAPara(){
+    $("#randPara").append("<p>ADDED</p>");
+}
+
+function replaceWText(){
+    $("#replaceWText").text("Never Replaced!");
 }
 
