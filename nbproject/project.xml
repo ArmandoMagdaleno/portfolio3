@@ -5,5 +5,9 @@
         <data xmlns="http://www.netbeans.org/ns/clientside-project/1">
             <name>Portfolio3ArmandoM</name>
         </data>
+        <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
+            <word>JAMES</word>
+            <word>LEBRON</word>
+        </spellchecker-wordlist>
     </configuration>
 </project>

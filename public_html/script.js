@@ -19,6 +19,13 @@ $("document").ready(function() {
     $("#randPara").bind("click", addAPara);
 
     $("#removePara").bind("click", removeAPara);
+    
+    
+    $("#show").css("visibility", "hidden");
+    
+    $("#hide").bind("click", hideThePage);
+    
+    $("#show").bind("click", showThePage);
 
 });
 
@@ -49,3 +56,17 @@ function replaceWText(){
     $("#replaceWText").text("Never Replaced!");
 }
 
+
+
+////hiding and showing my page////
+
+function hideThePage(){
+    $("#show").css("visibility", "visible");
+    $("div").hide("slide", {}, 2500);
+    $("#show").show("fold", {}, 2500);
+}
+   
+function showThePage(){
+    $("div").show("fold", {}, 2500);
+    $("#show").hide("puff", {}, 2500);
+}
