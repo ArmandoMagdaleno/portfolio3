@@ -27,6 +27,13 @@ $("document").ready(function() {
     
     $("#show").bind("click", showThePage);
 
+
+    
+    $("#superHumans").accordion({header: "h2"});
+    $("#superHumans").css("width", "400px");
+    
+    $("h2").css("background", "cyan");
+    
 });
 
 function mouseOverMe() {
