@@ -36,6 +36,7 @@ $("document").ready(function() {
     
 });
 
+//////changes the ttext when mouse hovers over it////
 function mouseOverMe() {
     $("h1").html("GREATEST OF ALL TIME");
 }
